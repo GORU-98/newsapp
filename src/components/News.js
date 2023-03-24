@@ -43,7 +43,7 @@ console.log(this.state.totalResults)
 
 
 
-let url=`https://newsapi.org/v2/everything?q=apple&from=2023-03-23&to=2023-03-23&sortBy=popularity&apiKey=647739fe51424fc3bbf83735e1977033&page=${this.state.page -1}&pageSize=${this.props.pageSize}
+let url=`https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=647739fe51424fc3bbf83735e1977033&page=${this.state.page -1}&pageSize=${this.props.pageSize}
 `;
 this.setState({
     loading:true
