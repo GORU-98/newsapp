@@ -15,7 +15,7 @@ export class News extends Component {
    }
  async componentDidMount(){
     // let url=`https://newsapi.org/v2/${this.props.category}?q=apple&from=2022-12-28&to=2022-12-28&sortBy=popularity&apiKey=647739fe51424fc3bbf83735e1977033&page=1&pageSize=${this.props.pageSize}`
-    let url=`https://newsapi.org/v2/everything?q=apple&from=2023-03-23&to=2023-03-23&sortBy=popularity&apiKey=647739fe51424fc3bbf83735e1977033&page=1&pageSize=${this.props.pageSize}
+    let url=`https://newsapi.org/v2/everything?q=apple&sortBy=popularity&apiKey=647739fe51424fc3bbf83735e1977033&page=1&pageSize=${this.props.pageSize}
     `;
     let data= await fetch(url);
     let parsedData= await data.json();
